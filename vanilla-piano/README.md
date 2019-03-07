@@ -155,7 +155,7 @@ In this step we'll add an animation to make our keys work when their associated 
 
 ```js
 window.addEventListener("keypress", e => {
-  const tone = document.querySelector(`audio[data-key="${e.keyCode}"]`);
+  const tone = document.querySelector(`audio[dat a-key="${e.keyCode}"]`);
   if (!tone) return;
   const pianoKey = document.querySelector(`.pianoKey[data-key="${e.keyCode}"]`);
   tone.currentTime = 0;
